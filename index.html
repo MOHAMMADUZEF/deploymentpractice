@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IP Finder</title>
+</head>
+<body>
+
+    <h2>IP Address Finder</h2>
+
+    <input type="text" id="website" placeholder="www.google.com">
+
+    <button onclick="findIP()">
+        Find IP
+    </button>
+
+    <p id="result"></p>
+
+    <script>
+        function findIP() {
+
+            let website =
+                document.getElementById("website").value;
+
+            document.getElementById("result").innerText = "Backend required to find IP of: "+ website;
+        }
+    </script>
+
+</body>
+</html>
